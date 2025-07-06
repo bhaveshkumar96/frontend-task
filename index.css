@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#main-container {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  /* height: 174.11px; */
+  width: 341px;
+  border: 2px solid #ff6b82;
+  background: #fff0f3;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1.5px solid #c8c8c8;
+}
+.divider span {
+  color: #ff6b82;
+  font-weight: 600;
+}
+.upper-div {
+  display: flex;
+  justify-content: flex-start;
+}
+.upper-div-left {
+  margin-right: 30px;
+  margin-left: 5px;
+}
+.upper-div-left span {
+  background: #ff6b82;
+  color: white;
+  padding: 1px 6px 1px 6px;
+  margin-left: 5px;
+}
+.upper-div-left h5 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: large;
+}
+.upper-div-left p {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: small;
+}
+.upper-div-right h5,
+.upper-div-right p {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: large;
+}
+.selecter-row,
+.heading-row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.selecter-row select {
+  border: 1px solid #c8c8c8;
+}
+input[type="radio"] {
+  accent-color: #ff6b82;
+  border: none;
+}
+.select-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.card.active .select-container {
+  max-height: 500px;
+}
